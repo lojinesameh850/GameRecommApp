@@ -1,0 +1,16 @@
+GAME NAME,Genre,pc,console,mobile,age,singleplayer,multiplayer,violence,graphics,story importance,budget,online,skill level,session length
+The Witcher 3,rpg,1,1,0,adult,1,0,1,realistic,high,cheap,0,intermediate,long
+Minecraft,adventure,1,1,1,child,1,1,0,stylized,low,cheap,1,beginner,medium
+call of duty,shooter,1,1,1,adult,1,1,1,realistic,medium,pricey,1,intermediate,medium
+stardew valley,adventure,1,0,1,child,1,1,0,retro,medium,cheap,1,beginner,medium
+dark souls,rpg,1,1,0,teen,1,0,1,realistic,high,cheap,0,expert,long
+animal crossing ,adventure,0,1,0,child,1,0,0,stylized,low,pricey,1,beginner,short
+fifa 2024,sports,1,1,0,child,1,1,0,realistic,low,pricey,1,intermediate,short
+cyberpunk 2077,rpg,1,1,0,adult,1,0,1,realistic,high,pricey,0,intermediate,long
+among us,puzzle,1,0,1,child,0,1,0,stylized,low,cheap,1,beginner,short
+fornite,shooter,1,1,1,teen,1,1,1,stylized,low,free,1,intermediate,medium
+candy crush,puzzle,0,0,1,child,1,0,0,stylized,low,free,0,beginner,short
+super mario bros,platformer,0,1,0,child,1,0,0,retro,low,cheap,0,intermediate,medium
+resident evil 4,horror,1,1,0,adult,1,0,1,realistic,high,cheap,0,intermediate,long
+portal 2,puzzle,1,0,0,teen,1,1,0,stylized,medium,cheap,0,intermediate,medium
+celeste,platformer,1,1,0,teen,1,0,0,retro,medium,cheap,0,expert,medium

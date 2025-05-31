@@ -125,6 +125,7 @@ game_platform('Minecraft', 'mobile').
 game_platform('Minecraft', 'console').
 game_platform('Call of Duty', 'pc').
 game_platform('Call of Duty', 'console').
+game_platform('Call of Duty', 'mobile').
 game_platform('Stardew Valley', 'pc').
 game_platform('Stardew Valley', 'mobile').
 game_platform('Dark Souls', 'pc').
@@ -133,6 +134,7 @@ game_platform('Animal Crossing', 'console').
 game_platform('FIFA 2024', 'pc').
 game_platform('FIFA 2024', 'console').
 game_platform('Cyberpunk 2077', 'pc').
+game_platform('Cyberpunk 2077', 'console').
 game_platform('Among Us', 'pc').
 game_platform('Among Us', 'mobile').
 game_platform('Fortnite', 'pc').
@@ -168,11 +170,13 @@ game_mode('The Witcher 3', 'singleplayer').
 game_mode('Minecraft', 'multiplayer').
 game_mode('Minecraft', 'singleplayer').
 game_mode('Call of Duty', 'multiplayer').
+game_mode('Call of Duty', 'singleplayer').
 game_mode('Stardew Valley', 'singleplayer').
 game_mode('Stardew Valley', 'multiplayer').
 game_mode('Dark Souls', 'singleplayer').
 game_mode('Animal Crossing', 'singleplayer').
 game_mode('FIFA 2024', 'multiplayer').
+game_mode('FIFA 2024', 'singleplayer').
 game_mode('Cyberpunk 2077', 'singleplayer').
 game_mode('Among Us', 'multiplayer').
 game_mode('Fortnite', 'multiplayer').
@@ -180,6 +184,7 @@ game_mode('Candy Crush', 'singleplayer').
 game_mode('Super Mario Bros', 'singleplayer').
 game_mode('Resident Evil 4', 'singleplayer').
 game_mode('Portal 2', 'singleplayer').
+game_mode('Portal 2', 'multiplayer').
 game_mode('Celeste', 'singleplayer').
 
 % Violence: yes, no
