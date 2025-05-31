@@ -190,7 +190,7 @@ game_genre('Rocket League', 'sports').
 game_genre('Dead by Daylight', 'horror').
 game_genre('Firewatch', 'adventure').
 game_genre('Hollow Knight', 'platformer').
-game_genre('Clash of Clans', 'strategy'). % i dont think Strategy exists
+game_genre('Clash of Clans', 'puzzle'). % i dont think Strategy exists
 game_genre('God of War', 'rpg').
 game_genre('God of War', 'adventure').
 game_genre('It Takes Two', 'platformer').
