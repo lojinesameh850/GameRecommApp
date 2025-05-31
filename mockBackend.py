@@ -106,7 +106,6 @@ game('Half-Life 2').
 game('ARK: Survival Evolved').
 game('Marvel Rivals').
 game('Spelunky').
-game('The Sims 4').
 game('Tetris').
 game('League of Legends').
 game('Journey').
@@ -143,6 +142,41 @@ game_genre('Resident Evil 4', 'horror').
 game_genre('Portal 2', 'puzzle').
 game_genre('Celeste', 'platformer').
 
+game_genre('Half-Life 2', 'Shooter').
+game_genre('Half-Life 2', 'Adventure').
+game_genre('Terraria', 'Adventure').
+game_genre('Terraria', 'Platformer').
+game_genre('ARK: Survival Evolved', 'Adventure').
+game_genre('ARK: Survival Evolved', 'Survival').
+game_genre('Marvel Rivals', 'Shooter').
+game_genre('Marvel Rivals', 'Action').
+game_genre('Spelunky', 'Platformer').
+game_genre('Spelunky', 'Adventure').
+game_genre('Tetris', 'Puzzle').
+game_genre('League of Legends', 'RPG').
+game_genre('Journey', 'Adventure').
+game_genre('Hades', 'RPG').
+game_genre('Rocket League', 'Sports').
+game_genre('Dead by Daylight', 'Horror').
+game_genre('Firewatch', 'Adventure').
+game_genre('Hollow Knight', 'Platformer').
+game_genre('Clash of Clans', 'Strategy'). % i dont think Strategy exists
+game_genre('God of War', 'RPG').
+game_genre('God of War', 'Adventure').
+game_genre('God of War', 'Adventure').
+game_genre('It Takes Two', 'Platformer').
+game_genre('Valorant', 'Shooter').
+game_genre('Slay the Spire', 'Puzzle').
+game_genre('Slay the Spire', 'Adventure').
+game_genre('Roblox', 'Platformer').
+game_genre('Baldur\'s Gate 3', 'RPG').
+game_genre('Little Nightmares', 'Horror').
+game_genre('The Legend of Zelda', 'Adventure').
+game_genre('The Legend of Zelda', 'Platformer').
+
+
+% Game Platform: pc, console, mobile
+
 game_platform('The Witcher 3', 'pc').
 game_platform('The Witcher 3', 'console').
 game_platform('Minecraft', 'pc').
@@ -172,6 +206,50 @@ game_platform('Resident Evil 4', 'console').
 game_platform('Portal 2', 'pc').
 game_platform('Celeste', 'pc').
 game_platform('Celeste', 'console').
+game_platform('Half-Life 2', 'pc').
+game_platform('Half-Life 2', 'console').
+game_platform('Terraria', 'pc').
+game_platform('Terraria', 'console').
+game_platform('Terraria', 'mobile').
+game_platform('ARK: Survival Evolved', 'pc').
+game_platform('ARK: Survival Evolved', 'console').
+game_platform('ARK: Survival Evolved', 'mobile').
+game_platform('Marvel Rivals', 'pc').
+game_platform('Marvel Rivals', 'console').
+game_platform('Spelunky', 'pc').
+game_platform('Spelunky', 'console').
+game_platform('Tetris', 'pc').
+game_platform('Tetris', 'console').
+game_platform('Tetris', 'mobile').
+game_platform('League of Legends', 'pc').
+game_platform('Journey', 'pc').
+game_platform('Journey', 'console').
+game_platform('Hades', 'pc').
+game_platform('Rocket League', 'pc').
+game_platform('Rocket League', 'console').
+game_platform('Dead by Daylight', 'pc').
+game_platform('Dead by Daylight', 'console').
+game_platform('Firewatch', 'pc').
+game_platform('Firewatch', 'console').
+game_platform('Hollow Knight', 'pc').
+game_platform('Hollow Knight', 'console').
+game_platform('Hollow Knight', 'mobile').
+game_platform('Clash of Clans', 'mobile').
+game_platform('God of War', 'pc').
+game_platform('God of War', 'console').
+game_platform('It Takes Two', 'pc').
+game_platform('It Takes Two', 'console').
+game_platform('Valorant', 'pc').
+game_platform('Slay the Spire', 'pc').
+game_platform('Roblox', 'pc').
+game_platform('Roblox', 'console').
+game_platform('Baldur\'s Gate 3', 'pc').
+game_platform('Baldur\'s Gate 3', 'console').
+game_platform('Little Nightmares', 'pc').
+game_platform('Little Nightmares', 'console').
+game_platform('The Legend of Zelda', 'pc').
+game_platform('The Legend of Zelda', 'console').
+
 
 % Age categories: child, teen, adult
 game_age_category('The Witcher 3', 'adult').
@@ -189,6 +267,56 @@ game_age_category('Super Mario Bros', 'child').
 game_age_category('Resident Evil 4', 'adult').
 game_age_category('Portal 2', 'teen').
 game_age_category('Celeste', 'teen').
+game_age_category('Half-Life 2', 'teen').
+game_age_category('Half-Life 2', 'adult').
+game_age_category('Terraria', 'child').
+game_age_category('Terraria', 'teen').
+game_age_category('Terraria', 'adult').
+game_age_category('ARK: Survival Evolved', 'teen').
+game_age_category('ARK: Survival Evolved', 'adult').
+game_age_category('Marvel Rivals', 'teen').
+game_age_category('Marvel Rivals', 'adult').
+game_age_category('Spelunky', 'teen').
+game_age_category('Spelunky', 'adult').
+game_age_category('Tetris', 'child').
+game_age_category('League of Legends', 'teen').
+game_age_category('Journey', 'adult').
+game_age_category('Hades', 'adult').
+game_age_category('Rocket League', 'teen').
+game_age_category('Dead by Daylight', 'adult').
+game_age_category('Firewatch', 'adult').
+game_age_category('Hollow Knight', 'teen').
+game_age_category('Clash of Clans', 'child').
+game_age_category('God of War', 'adult').
+game_age_category('It Takes Two', 'adult').
+game_age_category('Valorant', 'teen').
+game_age_category('Slay the Spire', 'adult').
+game_age_category('Roblox', 'child').
+game_age_category('Baldur\'s Gate 3', 'adult').
+game_age_category('Little Nightmares', 'teen').
+game_age_category('The Legend of Zelda', 'teen').
+game_age_category('Tetris', 'child').
+game_age_category('League of Legends', 'teen').
+game_age_category('Journey', 'adult').
+game_age_category('Hades', 'adult').
+game_age_category('Rocket League', 'teen').
+game_age_category('Dead by Daylight', 'adult').
+game_age_category('Firewatch', 'teen').
+game_age_category('Firewatch', 'adult').
+game_age_category('Hollow Knight', 'teen').
+game_age_category('Clash of Clans', 'child').
+game_age_category('God of War', 'teen').
+game_age_category('God of War', 'adult').
+game_age_category('It Takes Two', 'teen').
+game_age_category('It Takes Two', 'adult').
+game_age_category('Valorant', 'teen').
+game_age_category('Slay the Spire', 'adult').
+game_age_category('Roblox', 'child').
+game_age_category('Baldur\'s Gate 3', 'adult').
+game_age_category('Little Nightmares', 'teen').
+game_age_category('The Legend of Zelda', 'teen').
+
+
 
 % Game mode: multiplayer, singleplayer
 game_mode('The Witcher 3', 'singleplayer').
@@ -211,6 +339,32 @@ game_mode('Resident Evil 4', 'singleplayer').
 game_mode('Portal 2', 'singleplayer').
 game_mode('Portal 2', 'multiplayer').
 game_mode('Celeste', 'singleplayer').
+game_mode('Half-Life 2', 'singleplayer').
+game_mode('Terraria', 'singleplayer').
+game_mode('Terraria', 'multiplayer').
+game_mode('ARK: Survival Evolved', 'singleplayer').
+game_mode('ARK: Survival Evolved', 'multiplayer').
+game_mode('Marvel Rivals', 'multiplayer').
+game_mode('Spelunky', 'singleplayer').
+game_mode('Tetris', 'singleplayer').
+game_mode('League of Legends', 'multiplayer').
+game_mode('Journey', 'singleplayer').
+game_mode('Journey', 'multiplayer').
+game_mode('Hades', 'singleplayer').
+game_mode('Rocket League', 'multiplayer').
+game_mode('Dead by Daylight', 'multiplayer').
+game_mode('Firewatch', 'singleplayer').
+game_mode('Hollow Knight', 'singleplayer').
+game_mode('Clash of Clans', 'multiplayer').
+game_mode('God of War', 'singleplayer').
+game_mode('It Takes Two', 'multiplayer').
+game_mode('Valorant', 'multiplayer').
+game_mode('Slay the Spire', 'singleplayer').
+game_mode('Roblox', 'multiplayer').
+game_mode('Baldur\'s Gate 3', 'multiplayer').
+game_mode('Little Nightmares', 'singleplayer').
+game_mode('The Legend of Zelda', 'singleplayer').
+
 
 % Violence: yes, no
 game_violence('The Witcher 3', 'yes').
@@ -228,6 +382,29 @@ game_violence('Super Mario Bros', 'no').
 game_violence('Resident Evil 4', 'yes').
 game_violence('Portal 2', 'no').
 game_violence('Celeste', 'no').
+game_violence('Half-Life 2', 'yes').
+game_violence('Terraria', 'no').
+game_violence('ARK: Survival Evolved', 'yes').
+game_violence('Marvel Rivals', 'no').
+game_violence('Spelunky', 'no').
+game_violence('Tetris', 'no').
+game_violence('League of Legends', 'no').
+game_violence('Journey', 'no').
+game_violence('Hades', 'yes').
+game_violence('Rocket League', 'no').
+game_violence('Dead by Daylight', 'yes').
+game_violence('Firewatch', 'no').
+game_violence('Hollow Knight', 'yes').
+game_violence('Clash of Clans', 'no').
+game_violence('God of War', 'yes').
+game_violence('It Takes Two', 'no').
+game_violence('Valorant', 'yes').
+game_violence('Slay the Spire', 'no').
+game_violence('Roblox', 'no').
+game_violence('Baldur\'s Gate 3', 'yes').
+game_violence('Little Nightmares', 'yes').
+game_violence('The Legend of Zelda', 'no').
+
 
 % Graphics: realistic, stylized, retro
 game_graphics('The Witcher 3', 'realistic').
@@ -245,6 +422,29 @@ game_graphics('Super Mario Bros', 'retro').
 game_graphics('Resident Evil 4', 'realistic').
 game_graphics('Portal 2', 'stylized').
 game_graphics('Celeste', 'retro').
+game_graphics('Half-Life 2', 'realistic').
+game_graphics('Terraria', 'retro').
+game_graphics('ARK: Survival Evolved', 'realistic').
+game_graphics('Marvel Rivals', 'stylized').
+game_graphics('Spelunky', 'retro').
+game_graphics('Tetris', 'retro').
+game_graphics('League of Legends', 'stylized').
+game_graphics('Journey', 'stylized').
+game_graphics('Hades', 'stylized').
+game_graphics('Rocket League', 'stylized').
+game_graphics('Dead by Daylight', 'realistic').
+game_graphics('Firewatch', 'realistic').
+game_graphics('Hollow Knight', 'stylized').
+game_graphics('Clash of Clans', 'stylized').
+game_graphics('God of War', 'realistic').
+game_graphics('It Takes Two', 'stylized').
+game_graphics('Valorant', 'stylized').
+game_graphics('Slay the Spire', 'stylized').
+game_graphics('Roblox', 'stylized').
+game_graphics('Baldur\'s Gate 3', 'realistic').
+game_graphics('Little Nightmares', 'stylized').
+game_graphics('The Legend of Zelda', 'stylized').
+
 
 % Story importance: low, medium, high
 game_story('The Witcher 3', 'high').
@@ -262,6 +462,29 @@ game_story('Super Mario Bros', 'low').
 game_story('Resident Evil 4', 'high').
 game_story('Portal 2', 'medium').
 game_story('Celeste', 'medium').
+game_story('Half-Life 2', 'high').
+game_story('Terraria', 'low').
+game_story('ARK: Survival Evolved', 'medium').
+game_story('Marvel Rivals', 'low').
+game_story('Spelunky', 'low').
+game_story('Tetris', 'low').
+game_story('League of Legends', 'low').
+game_story('Journey', 'high').
+game_story('Hades', 'medium').
+game_story('Rocket League', 'low').
+game_story('Dead by Daylight', 'low').
+game_story('Firewatch', 'high').
+game_story('Hollow Knight', 'high').
+game_story('Clash of Clans', 'low').
+game_story('God of War', 'high').
+game_story('It Takes Two', 'high').
+game_story('Valorant', 'low').
+game_story('Slay the Spire', 'medium').
+game_story('Roblox', 'low').
+game_story('Baldur\'s Gate 3', 'high').
+game_story('Little Nightmares', 'high').
+game_story('The Legend of Zelda', 'high').
+
 
 % Budget: free, cheap, pricey
 game_budget('The Witcher 3', 'cheap').
@@ -279,6 +502,29 @@ game_budget('Super Mario Bros', 'cheap').
 game_budget('Resident Evil 4', 'cheap').
 game_budget('Portal 2', 'cheap').
 game_budget('Celeste', 'cheap').
+game_budget('Half-Life 2', 'cheap').
+game_budget('Terraria', 'cheap').
+game_budget('ARK: Survival Evolved', 'pricey').
+game_budget('Marvel Rivals', 'free').
+game_budget('Spelunky', 'cheap').
+game_budget('Tetris', 'free').
+game_budget('League of Legends', 'free').
+game_budget('Journey', 'cheap').
+game_budget('Hades', 'cheap').
+game_budget('Rocket League', 'free').
+game_budget('Dead by Daylight', 'pricey').
+game_budget('Firewatch', 'cheap').
+game_budget('Hollow Knight', 'cheap').
+game_budget('Clash of Clans', 'free').
+game_budget('God of War', 'pricey').
+game_budget('It Takes Two', 'pricey').
+game_budget('Valorant', 'free').
+game_budget('Slay the Spire', 'cheap').
+game_budget('Roblox', 'free').
+game_budget('Baldur\'s Gate 3', 'pricey').
+game_budget('Little Nightmares', 'cheap').
+game_budget('The Legend of Zelda', 'pricey').
+
 
 % Online: yes, no
 game_online('The Witcher 3', 'no').
@@ -296,6 +542,31 @@ game_online('Super Mario Bros', 'no').
 game_online('Resident Evil 4', 'no').
 game_online('Portal 2', 'no').
 game_online('Celeste', 'no').
+game_online('Half-Life 2', 'no').
+game_online('Terraria', 'no').
+game_online('ARK: Survival Evolved', 'no').
+game_online('ARK: Survival Evolved', 'yes').
+game_online('Marvel Rivals', 'yes').
+game_online('Spelunky', 'no').
+game_online('Tetris', 'no').
+game_online('League of Legends', 'yes').
+game_online('Journey', 'no').
+game_online('Hades', 'no').
+game_online('Rocket League', 'yes').
+game_online('Rocket League', 'no').
+game_online('Dead by Daylight', 'yes').
+game_online('Firewatch', 'no').
+game_online('Hollow Knight', 'no').
+game_online('Clash of Clans', 'yes').
+game_online('God of War', 'no').
+game_online('It Takes Two', 'yes').
+game_online('Valorant', 'yes').
+game_online('Slay the Spire', 'no').
+game_online('Roblox', 'yes').
+game_online('Baldur\'s Gate 3', 'yes').
+game_online('Little Nightmares', 'no').
+game_online('The Legend of Zelda', 'no').
+
 
 % Skill level: beginner, intermediate, expert
 game_skill('The Witcher 3', 'intermediate').
@@ -313,6 +584,36 @@ game_skill('Super Mario Bros', 'intermediate').
 game_skill('Resident Evil 4', 'intermediate').
 game_skill('Portal 2', 'intermediate').
 game_skill('Celeste', 'expert').
+game_skill('Half-Life 2', 'beginner').
+game_skill('Half-Life 2', 'intermediate').
+game_skill('Terraria', 'beginner').
+game_skill('Terraria', 'intermediate').
+game_skill('Terraria', 'expert').
+game_skill('ARK: Survival Evolved', 'intermediate').
+game_skill('ARK: Survival Evolved', 'expert').
+game_skill('Marvel Rivals', 'intermediate').
+game_skill('Marvel Rivals', 'expert').
+game_skill('Spelunky', 'intermediate').
+game_skill('Spelunky', 'expert').
+game_skill('Tetris', 'beginner').
+game_skill('League of Legends', 'expert').
+game_skill('Journey', 'beginner').
+game_skill('Hades', 'expert').
+game_skill('Rocket League', 'intermediate').
+game_skill('Dead by Daylight', 'expert').
+game_skill('Firewatch', 'beginner').
+game_skill('Hollow Knight', 'expert').
+game_skill('Clash of Clans', 'beginner').
+game_skill('God of War', 'expert').
+game_skill('God of War', 'intermediate').
+game_skill('It Takes Two', 'intermediate').
+game_skill('Valorant', 'intermediate').
+game_skill('Slay the Spire', 'expert').
+game_skill('Roblox', 'beginner').
+game_skill('Baldur\'s Gate 3', 'expert').
+game_skill('Little Nightmares', 'intermediate').
+game_skill('The Legend of Zelda', 'intermediate').
+
 
 % Session length: short, medium, long
 game_session_length('The Witcher 3', 'long').
@@ -330,6 +631,36 @@ game_session_length('Super Mario Bros', 'medium').
 game_session_length('Resident Evil 4', 'long').
 game_session_length('Portal 2', 'medium').
 game_session_length('Celeste', 'medium').
+game_session_length('Half-Life 2', 'medium').
+game_session_length('Half-Life 2', 'long').
+game_session_length('Terraria', 'short').
+game_session_length('Terraria', 'medium').
+game_session_length('Terraria', 'long').
+game_session_length('ARK: Survival Evolved', 'medium').
+game_session_length('ARK: Survival Evolved', 'long').
+game_session_length('Marvel Rivals', 'short').
+game_session_length('Marvel Rivals', 'medium').
+game_session_length('Spelunky', 'short').
+game_session_length('Spelunky', 'medium').
+game_session_length('Tetris', 'short').
+game_session_length('League of Legends', 'long').
+game_session_length('Journey', 'short').
+game_session_length('Hades', 'medium').
+game_session_length('Rocket League', 'medium').
+game_session_length('Dead by Daylight', 'medium').
+game_session_length('Firewatch', 'short').
+game_session_length('Hollow Knight', 'medium').
+game_session_length('Clash of Clans', 'short').
+game_session_length('God of War', 'long').
+game_session_length('God of War', 'medium').
+game_session_length('It Takes Two', 'medium').
+game_session_length('Valorant', 'medium').
+game_session_length('Slay the Spire', 'short').
+game_session_length('Roblox', 'short').
+game_session_length('Baldur\'s Gate 3', 'long').
+game_session_length('Little Nightmares', 'short').
+game_session_length('The Legend of Zelda', 'long').
+
 
 % Recommendation rules - updated for all categories
 suitable_for_player(Game) :-
