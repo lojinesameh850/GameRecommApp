@@ -5,7 +5,7 @@ from modules import *
 from widgets import *
 
 from PySide6.QtCore import Qt
-from PySide6.QtWidgets import QApplication, QMainWindow
+from PySide6.QtWidgets import QApplication, QMainWindow, QDialog, QScrollArea, QWidget
 
 import mockBackend
 
@@ -99,7 +99,10 @@ class MainWindow(QMainWindow):
             print("Generating recommendations with answers:", answers)
             backendResult=mockBackend.result(answers)
             print("Recommendations:", backendResult)
+            self.recommendations_window = RecommendationsWindow(backendResult, self)
+            self.recommendations_window.exec_()
         print(f'Button "{btnName}" pressed!')
+        
 
     def resizeEvent(self, event):
         # Update Size Grips
@@ -112,6 +115,58 @@ class MainWindow(QMainWindow):
             print('Mouse click: LEFT CLICK')
         if event.buttons() == Qt.RightButton:
             print('Mouse click: RIGHT CLICK')
+
+
+class RecommendationsWindow(QDialog):
+    def __init__(self, recommendations, parent=None):
+        super().__init__(parent)
+        self.setWindowTitle("Recommendations")
+        self.setMinimumSize(400, 300)
+
+        
+        # Create a scroll area
+        scroll_area = QScrollArea(self)
+        scroll_area.setWidgetResizable(True)
+
+        # Create a container widget for the scroll area
+        container = QWidget()
+        layout = QVBoxLayout(container)
+
+        # Add a title label
+        label_title = QLabel("Recommended Games:")
+        label_title.setStyleSheet("font-size: 18px; font-weight: bold; margin-bottom: 10px;")
+        layout.addWidget(label_title)
+
+        # Add each recommendation with an image
+        for game in recommendations["output"]:
+            # Create a horizontal layout for the image and game name
+            game_layout = QHBoxLayout()
+
+            # Add an image (placeholder or actual image path)
+            image_label = QLabel()
+            image_label.setFixedSize(80, 80)  # Increased image size
+            image_label.setStyleSheet("border: 1px solid gray;")  # Optional: Add a border
+            image_label.setPixmap(QPixmap("path/to/placeholder.png").scaled(80, 80, Qt.KeepAspectRatio, Qt.SmoothTransformation))  # Replace with actual image path
+
+            # Add the game name
+            game_name_label = QLabel(game)
+            game_name_label.setStyleSheet("font-size: 16px; margin-left: 10px;")  # Increased font size
+
+            # Add the image and game name to the horizontal layout
+            game_layout.addWidget(image_label)
+            game_layout.addWidget(game_name_label)
+
+            # Add the horizontal layout to the main layout
+            layout.addLayout(game_layout)
+
+        # Set the container widget as the scroll area's widget
+        scroll_area.setWidget(container)
+
+        # Create the main layout for the dialog
+        main_layout = QVBoxLayout(self)
+        main_layout.addWidget(scroll_area)
+
+        self.setLayout(main_layout)
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
