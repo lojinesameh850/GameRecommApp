@@ -3,6 +3,15 @@ import tempfile
 import os
 import re
 
+def unique_list(seq):
+    seen = set()
+    result = []
+    for item in seq:
+        if item not in seen:
+            seen.add(item)
+            result.append(item)
+    return result
+
 def result(answers):
     """
     Process user answers and get game recommendations from Prolog
@@ -58,6 +67,9 @@ def parse_prolog_output(stdout: str):
     if not_recommended_match:
         not_recommended = [game.strip() for game in not_recommended_match.group(1).split(',') if game.strip()]
 
+    recommended = unique_list(recommended)
+    not_recommended = unique_list(not_recommended)
+    
     return recommended, not_recommended
 
 def query_prolog_games(query):
@@ -141,7 +153,7 @@ game('It Takes Two').
 game('Valorant').
 game('Slay the Spire').
 game('Roblox').
-game('Baldur\'s Gate 3').
+game('Baldurs Gate 3').
 game('Little Nightmares').
 game('The Legend of Zelda').
 
@@ -186,7 +198,7 @@ game_genre('Valorant', 'shooter').
 game_genre('Slay the Spire', 'puzzle').
 game_genre('Slay the Spire', 'adventure').
 game_genre('Roblox', 'platformer').
-game_genre('Baldur\'s Gate 3', 'rpg').
+game_genre('Baldurs Gate 3', 'rpg').
 game_genre('Little Nightmares', 'horror').
 game_genre('The Legend of Zelda', 'adventure').
 game_genre('The Legend of Zelda', 'platformer').
@@ -261,8 +273,8 @@ game_platform('Valorant', 'pc').
 game_platform('Slay the Spire', 'pc').
 game_platform('Roblox', 'pc').
 game_platform('Roblox', 'console').
-game_platform('Baldur\'s Gate 3', 'pc').
-game_platform('Baldur\'s Gate 3', 'console').
+game_platform('Baldurs Gate 3', 'pc').
+game_platform('Baldurs Gate 3', 'console').
 game_platform('Little Nightmares', 'pc').
 game_platform('Little Nightmares', 'console').
 game_platform('The Legend of Zelda', 'pc').
@@ -311,7 +323,7 @@ game_age_category('It Takes Two', 'adult').
 game_age_category('Valorant', 'teen').
 game_age_category('Slay the Spire', 'adult').
 game_age_category('Roblox', 'child').
-game_age_category('Baldur\'s Gate 3', 'adult').
+game_age_category('Baldurs Gate 3', 'adult').
 game_age_category('Little Nightmares', 'teen').
 game_age_category('The Legend of Zelda', 'teen').
 
@@ -359,8 +371,8 @@ game_mode('It Takes Two', 'multiplayer').
 game_mode('Valorant', 'multiplayer').
 game_mode('Slay the Spire', 'singleplayer').
 game_mode('Roblox', 'multiplayer').
-game_mode('Baldur\'s Gate 3', 'singleplayer').
-game_mode('Baldur\'s Gate 3', 'multiplayer').
+game_mode('Baldurs Gate 3', 'singleplayer').
+game_mode('Baldurs Gate 3', 'multiplayer').
 game_mode('Little Nightmares', 'singleplayer').
 game_mode('The Legend of Zelda', 'singleplayer').
 
@@ -400,7 +412,7 @@ game_violence('It Takes Two', 'no').
 game_violence('Valorant', 'yes').
 game_violence('Slay the Spire', 'no').
 game_violence('Roblox', 'no').
-game_violence('Baldur\'s Gate 3', 'yes').
+game_violence('Baldurs Gate 3', 'yes').
 game_violence('Little Nightmares', 'yes').
 game_violence('The Legend of Zelda', 'no').
 
@@ -440,7 +452,7 @@ game_graphics('It Takes Two', 'stylized').
 game_graphics('Valorant', 'stylized').
 game_graphics('Slay the Spire', 'stylized').
 game_graphics('Roblox', 'stylized').
-game_graphics('Baldur\'s Gate 3', 'realistic').
+game_graphics('Baldurs Gate 3', 'realistic').
 game_graphics('Little Nightmares', 'stylized').
 game_graphics('The Legend of Zelda', 'stylized').
 
@@ -480,7 +492,7 @@ game_story('It Takes Two', 'high').
 game_story('Valorant', 'low').
 game_story('Slay the Spire', 'medium').
 game_story('Roblox', 'low').
-game_story('Baldur\'s Gate 3', 'high').
+game_story('Baldurs Gate 3', 'high').
 game_story('Little Nightmares', 'high').
 game_story('The Legend of Zelda', 'high').
 
@@ -520,7 +532,7 @@ game_budget('It Takes Two', 'pricey').
 game_budget('Valorant', 'free').
 game_budget('Slay the Spire', 'cheap').
 game_budget('Roblox', 'free').
-game_budget('Baldur\'s Gate 3', 'pricey').
+game_budget('Baldurs Gate 3', 'pricey').
 game_budget('Little Nightmares', 'cheap').
 game_budget('The Legend of Zelda', 'pricey').
 
@@ -562,7 +574,7 @@ game_online('It Takes Two', 'yes').
 game_online('Valorant', 'yes').
 game_online('Slay the Spire', 'no').
 game_online('Roblox', 'yes').
-game_online('Baldur\'s Gate 3', 'yes').
+game_online('Baldurs Gate 3', 'yes').
 game_online('Little Nightmares', 'no').
 game_online('The Legend of Zelda', 'no').
 
@@ -609,7 +621,7 @@ game_skill('It Takes Two', 'intermediate').
 game_skill('Valorant', 'intermediate').
 game_skill('Slay the Spire', 'expert').
 game_skill('Roblox', 'beginner').
-game_skill('Baldur\'s Gate 3', 'expert').
+game_skill('Baldurs Gate 3', 'expert').
 game_skill('Little Nightmares', 'intermediate').
 game_skill('The Legend of Zelda', 'intermediate').
 
@@ -654,7 +666,7 @@ game_session_length('It Takes Two', 'medium').
 game_session_length('Valorant', 'medium').
 game_session_length('Slay the Spire', 'short').
 game_session_length('Roblox', 'short').
-game_session_length('Baldur\'s Gate 3', 'long').
+game_session_length('Baldurs Gate 3', 'long').
 game_session_length('Little Nightmares', 'short').
 game_session_length('The Legend of Zelda', 'long').
 
@@ -768,9 +780,9 @@ if __name__ == "__main__":
     
     # Get recommendations
     recommendations = result(sample_answers)
-    print("Game Recommendation Results:")
+    # print("Game Recommendation Results:", recommendations, "\n\n")
     print(f"Success: {recommendations['success']}")
     if recommendations['success']:
-        print(f"Output: {recommendations['output']}")
+        print(f"Output: {recommendations['recommended']}")
     else:
         print(f"Error: {recommendations.get('error', 'Unknown error')}")
