@@ -69,7 +69,7 @@ def parse_prolog_output(stdout: str):
 
     recommended = unique_list(recommended)
     not_recommended = unique_list(not_recommended)
-    
+
     return recommended, not_recommended
 
 def query_prolog_games(query):
@@ -124,7 +124,7 @@ game('Call of Duty').
 game('Stardew Valley').
 game('Dark Souls').
 game('Animal Crossing').
-game('FIFA 2024').
+game('FC 24').
 game('Cyberpunk 2077').
 game('Among Us').
 game('Fortnite').
@@ -136,7 +136,7 @@ game('Celeste').
 
 game('Terraria').
 game('Half-Life 2').
-game('ARK: Survival Evolved').
+game('ARK Survival Evolved').
 game('Marvel Rivals').
 game('Spelunky').
 game('Tetris').
@@ -164,7 +164,7 @@ game_genre('Call of Duty', 'shooter').
 game_genre('Stardew Valley', 'adventure').
 game_genre('Dark Souls', 'rpg').
 game_genre('Animal Crossing', 'adventure').
-game_genre('FIFA 2024', 'sports').
+game_genre('FC 24', 'sports').
 game_genre('Cyberpunk 2077', 'rpg').
 game_genre('Among Us', 'puzzle').
 game_genre('Fortnite', 'shooter').
@@ -178,7 +178,7 @@ game_genre('Half-Life 2', 'shooter').
 game_genre('Half-Life 2', 'adventure').
 game_genre('Terraria', 'adventure').
 game_genre('Terraria', 'platformer').
-game_genre('ARK: Survival Evolved', 'adventure').
+game_genre('ARK Survival Evolved', 'adventure').
 game_genre('Marvel Rivals', 'shooter').
 game_genre('Spelunky', 'platformer').
 game_genre('Spelunky', 'adventure').
@@ -219,8 +219,8 @@ game_platform('Stardew Valley', 'mobile').
 game_platform('Dark Souls', 'pc').
 game_platform('Dark Souls', 'console').
 game_platform('Animal Crossing', 'console').
-game_platform('FIFA 2024', 'pc').
-game_platform('FIFA 2024', 'console').
+game_platform('FC 24', 'pc').
+game_platform('FC 24', 'console').
 game_platform('Cyberpunk 2077', 'pc').
 game_platform('Cyberpunk 2077', 'console').
 game_platform('Among Us', 'pc').
@@ -241,9 +241,9 @@ game_platform('Half-Life 2', 'mobile').
 game_platform('Terraria', 'pc').
 game_platform('Terraria', 'console').
 game_platform('Terraria', 'mobile').
-game_platform('ARK: Survival Evolved', 'pc').
-game_platform('ARK: Survival Evolved', 'console').
-game_platform('ARK: Survival Evolved', 'mobile').
+game_platform('ARK Survival Evolved', 'pc').
+game_platform('ARK Survival Evolved', 'console').
+game_platform('ARK Survival Evolved', 'mobile').
 game_platform('Marvel Rivals', 'pc').
 game_platform('Marvel Rivals', 'console').
 game_platform('Spelunky', 'pc').
@@ -277,7 +277,6 @@ game_platform('Baldurs Gate 3', 'pc').
 game_platform('Baldurs Gate 3', 'console').
 game_platform('Little Nightmares', 'pc').
 game_platform('Little Nightmares', 'console').
-game_platform('The Legend of Zelda', 'pc').
 game_platform('The Legend of Zelda', 'console').
 
 
@@ -288,7 +287,7 @@ game_age_category('Call of Duty', 'adult').
 game_age_category('Stardew Valley', 'child').
 game_age_category('Dark Souls', 'teen').
 game_age_category('Animal Crossing', 'child').
-game_age_category('FIFA 2024', 'child').
+game_age_category('FC 24', 'child').
 game_age_category('Cyberpunk 2077', 'adult').
 game_age_category('Among Us', 'child').
 game_age_category('Fortnite', 'teen').
@@ -302,8 +301,8 @@ game_age_category('Half-Life 2', 'adult').
 game_age_category('Terraria', 'child').
 game_age_category('Terraria', 'teen').
 game_age_category('Terraria', 'adult').
-game_age_category('ARK: Survival Evolved', 'teen').
-game_age_category('ARK: Survival Evolved', 'adult').
+game_age_category('ARK Survival Evolved', 'teen').
+game_age_category('ARK Survival Evolved', 'adult').
 game_age_category('Marvel Rivals', 'teen').
 game_age_category('Marvel Rivals', 'adult').
 game_age_category('Spelunky', 'teen').
@@ -338,8 +337,8 @@ game_mode('Stardew Valley', 'singleplayer').
 game_mode('Stardew Valley', 'multiplayer').
 game_mode('Dark Souls', 'singleplayer').
 game_mode('Animal Crossing', 'singleplayer').
-game_mode('FIFA 2024', 'multiplayer').
-game_mode('FIFA 2024', 'singleplayer').
+game_mode('FC 24', 'multiplayer').
+game_mode('FC 24', 'singleplayer').
 game_mode('Cyberpunk 2077', 'singleplayer').
 game_mode('Among Us', 'multiplayer').
 game_mode('Fortnite', 'multiplayer').
@@ -352,8 +351,8 @@ game_mode('Celeste', 'singleplayer').
 game_mode('Half-Life 2', 'singleplayer').
 game_mode('Terraria', 'singleplayer').
 game_mode('Terraria', 'multiplayer').
-game_mode('ARK: Survival Evolved', 'singleplayer').
-game_mode('ARK: Survival Evolved', 'multiplayer').
+game_mode('ARK Survival Evolved', 'singleplayer').
+game_mode('ARK Survival Evolved', 'multiplayer').
 game_mode('Marvel Rivals', 'multiplayer').
 game_mode('Spelunky', 'singleplayer').
 game_mode('Tetris', 'singleplayer').
@@ -384,7 +383,7 @@ game_violence('Call of Duty', 'yes').
 game_violence('Stardew Valley', 'no').
 game_violence('Dark Souls', 'yes').
 game_violence('Animal Crossing', 'no').
-game_violence('FIFA 2024', 'no').
+game_violence('FC 24', 'no').
 game_violence('Cyberpunk 2077', 'yes').
 game_violence('Among Us', 'no').
 game_violence('Fortnite', 'yes').
@@ -395,7 +394,7 @@ game_violence('Portal 2', 'no').
 game_violence('Celeste', 'no').
 game_violence('Half-Life 2', 'yes').
 game_violence('Terraria', 'no').
-game_violence('ARK: Survival Evolved', 'yes').
+game_violence('ARK Survival Evolved', 'yes').
 game_violence('Marvel Rivals', 'no').
 game_violence('Spelunky', 'no').
 game_violence('Tetris', 'no').
@@ -424,7 +423,7 @@ game_graphics('Call of Duty', 'realistic').
 game_graphics('Stardew Valley', 'retro').
 game_graphics('Dark Souls', 'realistic').
 game_graphics('Animal Crossing', 'stylized').
-game_graphics('FIFA 2024', 'realistic').
+game_graphics('FC 24', 'realistic').
 game_graphics('Cyberpunk 2077', 'realistic').
 game_graphics('Among Us', 'stylized').
 game_graphics('Fortnite', 'stylized').
@@ -435,7 +434,7 @@ game_graphics('Portal 2', 'stylized').
 game_graphics('Celeste', 'retro').
 game_graphics('Half-Life 2', 'realistic').
 game_graphics('Terraria', 'retro').
-game_graphics('ARK: Survival Evolved', 'realistic').
+game_graphics('ARK Survival Evolved', 'realistic').
 game_graphics('Marvel Rivals', 'stylized').
 game_graphics('Spelunky', 'retro').
 game_graphics('Tetris', 'retro').
@@ -464,7 +463,7 @@ game_story('Call of Duty', 'medium').
 game_story('Stardew Valley', 'medium').
 game_story('Dark Souls', 'high').
 game_story('Animal Crossing', 'low').
-game_story('FIFA 2024', 'low').
+game_story('FC 24', 'low').
 game_story('Cyberpunk 2077', 'high').
 game_story('Among Us', 'low').
 game_story('Fortnite', 'low').
@@ -475,7 +474,7 @@ game_story('Portal 2', 'medium').
 game_story('Celeste', 'medium').
 game_story('Half-Life 2', 'high').
 game_story('Terraria', 'low').
-game_story('ARK: Survival Evolved', 'medium').
+game_story('ARK Survival Evolved', 'medium').
 game_story('Marvel Rivals', 'low').
 game_story('Spelunky', 'low').
 game_story('Tetris', 'low').
@@ -504,7 +503,7 @@ game_budget('Call of Duty', 'pricey').
 game_budget('Stardew Valley', 'cheap').
 game_budget('Dark Souls', 'cheap').
 game_budget('Animal Crossing', 'pricey').
-game_budget('FIFA 2024', 'pricey').
+game_budget('FC 24', 'pricey').
 game_budget('Cyberpunk 2077', 'pricey').
 game_budget('Among Us', 'cheap').
 game_budget('Fortnite', 'free').
@@ -515,7 +514,7 @@ game_budget('Portal 2', 'cheap').
 game_budget('Celeste', 'cheap').
 game_budget('Half-Life 2', 'cheap').
 game_budget('Terraria', 'cheap').
-game_budget('ARK: Survival Evolved', 'pricey').
+game_budget('ARK Survival Evolved', 'pricey').
 game_budget('Marvel Rivals', 'free').
 game_budget('Spelunky', 'cheap').
 game_budget('Tetris', 'free').
@@ -544,7 +543,7 @@ game_online('Call of Duty', 'yes').
 game_online('Stardew Valley', 'yes').
 game_online('Dark Souls', 'no').
 game_online('Animal Crossing', 'yes').
-game_online('FIFA 2024', 'yes').
+game_online('FC 24', 'yes').
 game_online('Cyberpunk 2077', 'no').
 game_online('Among Us', 'yes').
 game_online('Fortnite', 'yes').
@@ -555,8 +554,8 @@ game_online('Portal 2', 'no').
 game_online('Celeste', 'no').
 game_online('Half-Life 2', 'no').
 game_online('Terraria', 'no').
-game_online('ARK: Survival Evolved', 'no').
-game_online('ARK: Survival Evolved', 'yes').
+game_online('ARK Survival Evolved', 'no').
+game_online('ARK Survival Evolved', 'yes').
 game_online('Marvel Rivals', 'yes').
 game_online('Spelunky', 'no').
 game_online('Tetris', 'no').
@@ -586,7 +585,7 @@ game_skill('Call of Duty', 'intermediate').
 game_skill('Stardew Valley', 'beginner').
 game_skill('Dark Souls', 'expert').
 game_skill('Animal Crossing', 'beginner').
-game_skill('FIFA 2024', 'intermediate').
+game_skill('FC 24', 'intermediate').
 game_skill('Cyberpunk 2077', 'intermediate').
 game_skill('Among Us', 'beginner').
 game_skill('Fortnite', 'intermediate').
@@ -600,8 +599,8 @@ game_skill('Half-Life 2', 'intermediate').
 game_skill('Terraria', 'beginner').
 game_skill('Terraria', 'intermediate').
 game_skill('Terraria', 'expert').
-game_skill('ARK: Survival Evolved', 'intermediate').
-game_skill('ARK: Survival Evolved', 'expert').
+game_skill('ARK Survival Evolved', 'intermediate').
+game_skill('ARK Survival Evolved', 'expert').
 game_skill('Marvel Rivals', 'intermediate').
 game_skill('Marvel Rivals', 'expert').
 game_skill('Spelunky', 'intermediate').
@@ -633,7 +632,7 @@ game_session_length('Call of Duty', 'medium').
 game_session_length('Stardew Valley', 'medium').
 game_session_length('Dark Souls', 'long').
 game_session_length('Animal Crossing', 'short').
-game_session_length('FIFA 2024', 'short').
+game_session_length('FC 24', 'short').
 game_session_length('Cyberpunk 2077', 'long').
 game_session_length('Among Us', 'short').
 game_session_length('Fortnite', 'medium').
@@ -646,8 +645,8 @@ game_session_length('Half-Life 2', 'medium').
 game_session_length('Terraria', 'short').
 game_session_length('Terraria', 'medium').
 game_session_length('Terraria', 'long').
-game_session_length('ARK: Survival Evolved', 'medium').
-game_session_length('ARK: Survival Evolved', 'long').
+game_session_length('ARK Survival Evolved', 'medium').
+game_session_length('ARK Survival Evolved', 'long').
 game_session_length('Marvel Rivals', 'short').
 game_session_length('Marvel Rivals', 'medium').
 game_session_length('Spelunky', 'short').
