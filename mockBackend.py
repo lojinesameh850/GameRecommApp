@@ -101,6 +101,31 @@ game('Resident Evil 4').
 game('Portal 2').
 game('Celeste').
 
+game('Terraria').
+game('Half-Life 2').
+game('ARK: Survival Evolved').
+game('Marvel Rivals').
+game('Spelunky').
+game('The Sims 4').
+game('Tetris').
+game('League of Legends').
+game('Journey').
+game('Hades').
+game('Rocket League').
+game('Dead by Daylight').
+game('Firewatch').
+game('Hollow Knight').
+game('Clash of Clans').
+game('God of War').
+game('It Takes Two').
+game('Valorant').
+game('Slay the Spire').
+game('Roblox').
+game('Baldur\'s Gate 3').
+game('Little Nightmares').
+game('The Legend of Zelda').
+% Still adding attributes to each
+
 % Game attributes - updated to match your categories
 game_genre('The Witcher 3', 'rpg').
 game_genre('Minecraft', 'adventure').
