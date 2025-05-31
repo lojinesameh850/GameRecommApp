@@ -123,7 +123,6 @@ game('Roblox').
 game('Baldur\'s Gate 3').
 game('Little Nightmares').
 game('The Legend of Zelda').
-% Still adding attributes to each
 
 % Game attributes - updated to match your categories
 game_genre('The Witcher 3', 'rpg').
@@ -142,37 +141,34 @@ game_genre('Resident Evil 4', 'horror').
 game_genre('Portal 2', 'puzzle').
 game_genre('Celeste', 'platformer').
 
-game_genre('Half-Life 2', 'Shooter').
-game_genre('Half-Life 2', 'Adventure').
-game_genre('Terraria', 'Adventure').
-game_genre('Terraria', 'Platformer').
-game_genre('ARK: Survival Evolved', 'Adventure').
-game_genre('ARK: Survival Evolved', 'Survival').
-game_genre('Marvel Rivals', 'Shooter').
-game_genre('Marvel Rivals', 'Action').
-game_genre('Spelunky', 'Platformer').
-game_genre('Spelunky', 'Adventure').
-game_genre('Tetris', 'Puzzle').
-game_genre('League of Legends', 'RPG').
-game_genre('Journey', 'Adventure').
-game_genre('Hades', 'RPG').
-game_genre('Rocket League', 'Sports').
-game_genre('Dead by Daylight', 'Horror').
-game_genre('Firewatch', 'Adventure').
-game_genre('Hollow Knight', 'Platformer').
-game_genre('Clash of Clans', 'Strategy'). % i dont think Strategy exists
-game_genre('God of War', 'RPG').
-game_genre('God of War', 'Adventure').
-game_genre('God of War', 'Adventure').
-game_genre('It Takes Two', 'Platformer').
-game_genre('Valorant', 'Shooter').
-game_genre('Slay the Spire', 'Puzzle').
-game_genre('Slay the Spire', 'Adventure').
-game_genre('Roblox', 'Platformer').
-game_genre('Baldur\'s Gate 3', 'RPG').
-game_genre('Little Nightmares', 'Horror').
-game_genre('The Legend of Zelda', 'Adventure').
-game_genre('The Legend of Zelda', 'Platformer').
+game_genre('Half-Life 2', 'shooter').
+game_genre('Half-Life 2', 'adventure').
+game_genre('Terraria', 'adventure').
+game_genre('Terraria', 'platformer').
+game_genre('ARK: Survival Evolved', 'adventure').
+game_genre('Marvel Rivals', 'shooter').
+game_genre('Spelunky', 'platformer').
+game_genre('Spelunky', 'adventure').
+game_genre('Tetris', 'puzzle').
+game_genre('League of Legends', 'rpg').
+game_genre('Journey', 'adventure').
+game_genre('Hades', 'rpg').
+game_genre('Rocket League', 'sports').
+game_genre('Dead by Daylight', 'horror').
+game_genre('Firewatch', 'adventure').
+game_genre('Hollow Knight', 'platformer').
+game_genre('Clash of Clans', 'strategy'). % i dont think Strategy exists
+game_genre('God of War', 'rpg').
+game_genre('God of War', 'adventure').
+game_genre('It Takes Two', 'platformer').
+game_genre('Valorant', 'shooter').
+game_genre('Slay the Spire', 'puzzle').
+game_genre('Slay the Spire', 'adventure').
+game_genre('Roblox', 'platformer').
+game_genre('Baldur\'s Gate 3', 'rpg').
+game_genre('Little Nightmares', 'horror').
+game_genre('The Legend of Zelda', 'adventure').
+game_genre('The Legend of Zelda', 'platformer').
 
 
 % Game Platform: pc, console, mobile
@@ -208,6 +204,7 @@ game_platform('Celeste', 'pc').
 game_platform('Celeste', 'console').
 game_platform('Half-Life 2', 'pc').
 game_platform('Half-Life 2', 'console').
+game_platform('Half-Life 2', 'mobile').
 game_platform('Terraria', 'pc').
 game_platform('Terraria', 'console').
 game_platform('Terraria', 'mobile').
@@ -287,27 +284,8 @@ game_age_category('Dead by Daylight', 'adult').
 game_age_category('Firewatch', 'adult').
 game_age_category('Hollow Knight', 'teen').
 game_age_category('Clash of Clans', 'child').
-game_age_category('God of War', 'adult').
-game_age_category('It Takes Two', 'adult').
-game_age_category('Valorant', 'teen').
-game_age_category('Slay the Spire', 'adult').
-game_age_category('Roblox', 'child').
-game_age_category('Baldur\'s Gate 3', 'adult').
-game_age_category('Little Nightmares', 'teen').
-game_age_category('The Legend of Zelda', 'teen').
-game_age_category('Tetris', 'child').
-game_age_category('League of Legends', 'teen').
-game_age_category('Journey', 'adult').
-game_age_category('Hades', 'adult').
-game_age_category('Rocket League', 'teen').
-game_age_category('Dead by Daylight', 'adult').
-game_age_category('Firewatch', 'teen').
-game_age_category('Firewatch', 'adult').
-game_age_category('Hollow Knight', 'teen').
-game_age_category('Clash of Clans', 'child').
 game_age_category('God of War', 'teen').
 game_age_category('God of War', 'adult').
-game_age_category('It Takes Two', 'teen').
 game_age_category('It Takes Two', 'adult').
 game_age_category('Valorant', 'teen').
 game_age_category('Slay the Spire', 'adult').
@@ -315,7 +293,6 @@ game_age_category('Roblox', 'child').
 game_age_category('Baldur\'s Gate 3', 'adult').
 game_age_category('Little Nightmares', 'teen').
 game_age_category('The Legend of Zelda', 'teen').
-
 
 
 % Game mode: multiplayer, singleplayer
@@ -361,6 +338,7 @@ game_mode('It Takes Two', 'multiplayer').
 game_mode('Valorant', 'multiplayer').
 game_mode('Slay the Spire', 'singleplayer').
 game_mode('Roblox', 'multiplayer').
+game_mode('Baldur\'s Gate 3', 'singleplayer').
 game_mode('Baldur\'s Gate 3', 'multiplayer').
 game_mode('Little Nightmares', 'singleplayer').
 game_mode('The Legend of Zelda', 'singleplayer').
@@ -632,7 +610,6 @@ game_session_length('Resident Evil 4', 'long').
 game_session_length('Portal 2', 'medium').
 game_session_length('Celeste', 'medium').
 game_session_length('Half-Life 2', 'medium').
-game_session_length('Half-Life 2', 'long').
 game_session_length('Terraria', 'short').
 game_session_length('Terraria', 'medium').
 game_session_length('Terraria', 'long').
