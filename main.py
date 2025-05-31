@@ -1,5 +1,6 @@
 import sys
 import platform
+import os
 
 from modules import *
 from widgets import *
@@ -144,9 +145,20 @@ class RecommendationsWindow(QDialog):
 
             # Add an image (placeholder or actual image path)
             image_label = QLabel()
-            image_label.setFixedSize(80, 80)  # Increased image size
-            image_label.setStyleSheet("border: 1px solid gray;")  # Optional: Add a border
-            image_label.setPixmap(QPixmap("path/to/placeholder.png").scaled(80, 80, Qt.KeepAspectRatio, Qt.SmoothTransformation))  # Replace with actual image path
+            # image_label.setFixedSize(80, 80)  # Increased image size
+            image_folder = "game_imgs"
+            filename = f"{game}.png"
+            image_path = os.path.join(image_folder, filename)
+            
+            if os.path.exists(image_path):
+                pixmap = QPixmap(image_path)
+                image_label.setPixmap(pixmap.scaled(150, 150, Qt.KeepAspectRatio, Qt.SmoothTransformation))  # Keep original size, no scaling
+
+            else:
+                print(f"Image file not found: {image_path}")
+                label.clear()  # Or set a placeholder if you want
+
+            # image_label.setStyleSheet("border: 1px solid gray;")  # Optional: Add a border
 
             # Add the game name
             game_name_label = QLabel(game)
