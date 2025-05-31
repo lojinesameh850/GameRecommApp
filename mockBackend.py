@@ -618,7 +618,6 @@ game_session_length('ARK: Survival Evolved', 'long').
 game_session_length('Marvel Rivals', 'short').
 game_session_length('Marvel Rivals', 'medium').
 game_session_length('Spelunky', 'short').
-game_session_length('Spelunky', 'medium').
 game_session_length('Tetris', 'short').
 game_session_length('League of Legends', 'long').
 game_session_length('Journey', 'short').
