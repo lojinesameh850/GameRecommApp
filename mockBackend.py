@@ -1,6 +1,7 @@
 import subprocess
 import tempfile
 import os
+import re
 
 def result(answers):
     """
@@ -43,6 +44,22 @@ def result(answers):
     
     return query_prolog_games(prolog_query)
 
+def parse_prolog_output(stdout: str):
+    recommended = []
+    not_recommended = []
+
+    # Use regex to extract game names
+    recommended_match = re.search(r"Recommended Games:\s*\[(.*?)\]", stdout)
+    not_recommended_match = re.search(r"Not Recommended:\s*\[(.*?)\]", stdout)
+
+    if recommended_match:
+        recommended = [game.strip() for game in recommended_match.group(1).split(',') if game.strip()]
+
+    if not_recommended_match:
+        not_recommended = [game.strip() for game in not_recommended_match.group(1).split(',') if game.strip()]
+
+    return recommended, not_recommended
+
 def query_prolog_games(query):
     """
     Execute Prolog query and return results
@@ -64,9 +81,13 @@ def query_prolog_games(query):
             timeout=10
         )
         
+        recommended, not_recommended = parse_prolog_output(result.stdout)
+
         return {
             'success': result.returncode == 0,
-            'output': result.stdout,
+            # 'output': result.stdout,
+            'recommended': recommended,
+            'not_recommended': not_recommended,
             'error': result.stderr
         }
     

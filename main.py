@@ -138,7 +138,7 @@ class RecommendationsWindow(QDialog):
         layout.addWidget(label_title)
 
         # Add each recommendation with an image
-        for game in recommendations["output"]:
+        for game in recommendations["recommended"]:
             # Create a horizontal layout for the image and game name
             game_layout = QHBoxLayout()
 
