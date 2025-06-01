@@ -8,7 +8,7 @@ from widgets import *
 from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QApplication, QMainWindow, QDialog, QScrollArea, QWidget
 
-import mockBackend
+import InferenceBackend
 
 widgets = None
 
@@ -98,7 +98,7 @@ class MainWindow(QMainWindow):
                 answers["budget"]="pricey"
 
             print("Generating recommendations with answers:", answers)
-            backendResult=mockBackend.result(answers)
+            backendResult=InferenceBackend.result(answers)
             print("Recommendations:", backendResult)
             self.recommendations_window = RecommendationsWindow(backendResult, self)
             self.recommendations_window.exec_()
