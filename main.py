@@ -123,7 +123,8 @@ class RecommendationsWindow(QDialog):
         super().__init__(parent)
         self.setWindowTitle("Recommendations")
         self.setMinimumSize(400, 300)
-
+        # Set the background color for the dialog
+        self.setStyleSheet("background-color: rgb(40, 44, 52);")
         
         # Create a scroll area
         scroll_area = QScrollArea(self)

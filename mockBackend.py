@@ -157,6 +157,14 @@ game('Baldurs Gate 3').
 game('Little Nightmares').
 game('The Legend of Zelda').
 
+game('Red Dead Redemption').
+game('Red Dead Redemption 2').
+
+game('Elden Ring').
+game('Elden Ring Nightreign').
+
+game('Outlast').
+game('Outlast 2').
 % Game attributes - updated to match your categories
 game_genre('The Witcher 3', 'rpg').
 game_genre('Minecraft', 'adventure').
@@ -202,6 +210,20 @@ game_genre('Baldurs Gate 3', 'rpg').
 game_genre('Little Nightmares', 'horror').
 game_genre('The Legend of Zelda', 'adventure').
 game_genre('The Legend of Zelda', 'platformer').
+
+game_genre('Red Dead Redemption' , 'rpg').
+game_genre('Red Dead Redemption' , 'adventure').
+game_genre('Red Dead Redemption 2' , 'rpg').
+game_genre('Red Dead Redemption 2' , 'adventure').
+
+game_genre('Elden Ring' , 'adventure').
+game_genre('Elden Ring' , 'rpg').
+game_genre('Elden Ring Nightreign' , 'adventure').
+game_genre('Elden Ring Nightreign' , 'rpg').
+
+game_genre('Outlast' , 'horror').
+game_genre('Outlast 2' , 'horror').
+
 
 
 % Game Platform: pc, console, mobile
@@ -278,6 +300,19 @@ game_platform('Baldurs Gate 3', 'console').
 game_platform('Little Nightmares', 'pc').
 game_platform('Little Nightmares', 'console').
 game_platform('The Legend of Zelda', 'console').
+game_platform('Red Dead Redemption', 'pc').
+game_platform('Red Dead Redemption', 'console').
+game_platform('Red Dead Redemption 2', 'pc').
+game_platform('Red Dead Redemption 2', 'console').
+game_platform('Elden Ring', 'pc').
+game_platform('Elden Ring', 'console').
+game_platform('Elden Ring Nightreign', 'pc').
+game_platform('Elden Ring Nightreign', 'console').
+game_platform('Outlast', 'pc').
+game_platform('Outlast', 'console').
+game_platform('Outlast 2', 'pc').
+game_platform('Outlast 2', 'console').
+
 
 
 % Age categories: child, teen, adult
@@ -325,6 +360,13 @@ game_age_category('Roblox', 'child').
 game_age_category('Baldurs Gate 3', 'adult').
 game_age_category('Little Nightmares', 'teen').
 game_age_category('The Legend of Zelda', 'teen').
+game_age_category('Red Dead Redemption', 'adult').
+game_age_category('Red Dead Redemption 2', 'adult').
+game_age_category('Elden Ring', 'teen').
+game_age_category('Elden Ring Nightreign', 'teen').
+
+game_age_category('Outlast', 'adult').
+game_age_category('Outlast 2', 'adult').
 
 
 % Game mode: multiplayer, singleplayer
@@ -374,6 +416,14 @@ game_mode('Baldurs Gate 3', 'singleplayer').
 game_mode('Baldurs Gate 3', 'multiplayer').
 game_mode('Little Nightmares', 'singleplayer').
 game_mode('The Legend of Zelda', 'singleplayer').
+game_mode('Red Dead Redemption', 'singleplayer').
+game_mode('Red Dead Redemption 2', 'singleplayer').
+game_mode('Red Dead Redemption 2', 'multiplayer').
+game_mode('Elden Ring', 'singleplayer').
+game_mode('Elden Ring', 'multiplayer').
+game_mode('Elden Ring Nightreign', 'multiplayer').
+game_mode('Outlast', 'singleplayer').
+game_mode('Outlast 2', 'singleplayer').
 
 
 % Violence: yes, no
@@ -414,6 +464,12 @@ game_violence('Roblox', 'no').
 game_violence('Baldurs Gate 3', 'yes').
 game_violence('Little Nightmares', 'yes').
 game_violence('The Legend of Zelda', 'no').
+game_violence('Red Dead Redemption', 'yes').
+game_violence('Red Dead Redemption 2', 'yes').
+game_violence('Elden Ring', 'yes').
+game_violence('Elden Ring Nightreign', 'yes').
+game_violence('Outlast', 'yes').
+game_violence('Outlast 2', 'yes').
 
 
 % Graphics: realistic, stylized, retro
@@ -454,6 +510,10 @@ game_graphics('Roblox', 'stylized').
 game_graphics('Baldurs Gate 3', 'realistic').
 game_graphics('Little Nightmares', 'stylized').
 game_graphics('The Legend of Zelda', 'stylized').
+game_graphics('Elden Ring', 'realistic').
+game_graphics('Elden Ring Nightreign', 'realistic').
+game_graphics('Outlast', 'realistic').
+game_graphics('Outlast 2', 'realistic').
 
 
 % Story importance: low, medium, high
@@ -494,6 +554,12 @@ game_story('Roblox', 'low').
 game_story('Baldurs Gate 3', 'high').
 game_story('Little Nightmares', 'high').
 game_story('The Legend of Zelda', 'high').
+game_story('Red Dead Redemption', 'high').
+game_story('Red Dead Redemption 2', 'high').
+game_story('Elden Ring', 'high').
+game_story('Elden Ring Nightreign', 'medium').
+game_story('Outlast', 'medium').
+game_story('Outlast 2', 'medium').
 
 
 % Budget: free, cheap, pricey
@@ -534,6 +600,12 @@ game_budget('Roblox', 'free').
 game_budget('Baldurs Gate 3', 'pricey').
 game_budget('Little Nightmares', 'cheap').
 game_budget('The Legend of Zelda', 'pricey').
+game_budget('Red Dead Redemption', 'cheap').
+game_budget('Red Dead Redemption 2', 'pricey').
+game_budget('Elden Ring', 'pricey').
+game_budget('Elden Ring Nightreign', 'cheap').
+game_budget('Outlast', 'cheap').
+game_budget('Outlast 2', 'cheap').
 
 
 % Online: yes, no
@@ -576,6 +648,12 @@ game_online('Roblox', 'yes').
 game_online('Baldurs Gate 3', 'yes').
 game_online('Little Nightmares', 'no').
 game_online('The Legend of Zelda', 'no').
+game_online('Red Dead Redemption', 'no').
+game_online('Red Dead Redemption 2', 'no').
+game_online('Elden Ring', 'no').
+game_online('Elden Ring Nightreign', 'yes').
+game_online('Outlast', 'no').
+game_online('Outlast 2', 'no').
 
 
 % Skill level: beginner, intermediate, expert
@@ -623,6 +701,12 @@ game_skill('Roblox', 'beginner').
 game_skill('Baldurs Gate 3', 'expert').
 game_skill('Little Nightmares', 'intermediate').
 game_skill('The Legend of Zelda', 'intermediate').
+game_skill('Red Dead Redemption', 'intermediate').
+game_skill('Red Dead Redemption 2', 'intermediate').
+game_skill('Elden Ring', 'intermediate').
+game_skill('Elden Ring Nightreign', 'expert').
+game_skill('Outlast', 'intermediate').
+game_skill('Outlast 2', 'intermediate').
 
 
 % Session length: short, medium, long
@@ -638,7 +722,7 @@ game_session_length('Among Us', 'short').
 game_session_length('Fortnite', 'medium').
 game_session_length('Candy Crush', 'short').
 game_session_length('Super Mario Bros', 'medium').
-game_session_length('Resident Evil 4', 'long').
+game_session_length('Resident Evil 4', 'medium').
 game_session_length('Portal 2', 'medium').
 game_session_length('Celeste', 'medium').
 game_session_length('Half-Life 2', 'medium').
@@ -668,6 +752,12 @@ game_session_length('Roblox', 'short').
 game_session_length('Baldurs Gate 3', 'long').
 game_session_length('Little Nightmares', 'short').
 game_session_length('The Legend of Zelda', 'long').
+game_session_length('Red Dead Redemption', 'long').
+game_session_length('Red Dead Redemption 2', 'long').
+game_session_length('Elden Ring', 'long').
+game_session_length('Elden Ring Nightreign', 'long').
+game_session_length('Outlast', 'medium').
+game_session_length('Outlast 2', 'medium').
 
 
 % Recommendation rules - updated for all categories

@@ -1,7 +1,7 @@
 from PySide6.QtCore import *
 from PySide6.QtGui import *
 from PySide6.QtWidgets import *
-
+import os
 from . resources_rc import *
 
 class Ui_MainWindow(object):
@@ -792,6 +792,84 @@ class Ui_MainWindow(object):
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.verticalLayout.setContentsMargins(10, 10, 10, 10)
 
+        self.gamesScrollArea = QScrollArea(self.widgets)
+        self.gamesScrollArea.setWidgetResizable(True)
+        self.gamesScrollArea.setStyleSheet("""
+            QScrollArea {
+                border: none;
+                background: transparent;
+            }
+        """)
+
+        # Create container widget for scroll area
+        self.scrollContent = QWidget()
+        self.gamesGridLayout = QGridLayout(self.scrollContent)
+        self.gamesGridLayout.setSpacing(20)
+
+        # Get all game images from the game_imgs folder
+        image_folder = "game_imgs"
+        if os.path.exists(image_folder):
+            # Get all game names without .png extension and sort them
+            game_names = sorted([os.path.splitext(f)[0] for f in os.listdir(image_folder) 
+                               if f.endswith('.png')])
+            
+            # Calculate positions in 4-column grid
+            row = 0
+            col = 0
+            for game_name in game_names:
+                # Create card frame
+                card = QFrame()
+                card.setFixedSize(200, 250)
+                card.setStyleSheet("""
+                    QFrame {
+                        background-color: rgb(33, 37, 43);
+                        border-radius: 10px;
+                        padding: 10px;
+                        border: 2px solid rgb(44, 49, 58);
+                    }
+                    QFrame:hover {
+                        border: 2px solid rgb(255, 121, 198);
+                    }
+                """)
+                card_layout = QVBoxLayout(card)
+                card_layout.setAlignment(Qt.AlignCenter)
+
+                # Create image label using the sorted name
+                image_label = QLabel()
+                image_path = os.path.join(image_folder, f"{game_name}.png")
+                pixmap = QPixmap(image_path)
+                scaled_pixmap = pixmap.scaled(180, 180, Qt.KeepAspectRatio, Qt.SmoothTransformation)
+                image_label.setPixmap(scaled_pixmap)
+                image_label.setAlignment(Qt.AlignCenter)
+
+                # Create game name label
+                name_label = QLabel(game_name)
+                name_label.setStyleSheet("""
+                    QLabel {
+                        color: rgb(255, 255, 255);
+                        font: 10pt 'Segoe UI';
+                    }
+                """)
+                name_label.setAlignment(Qt.AlignCenter)
+                name_label.setWordWrap(True)
+
+                # Add widgets to card
+                card_layout.addWidget(image_label)
+                card_layout.addWidget(name_label)
+
+                # Add card to grid
+                self.gamesGridLayout.addWidget(card, row, col)
+
+                # Update position
+                col += 1
+                if col >= 5:  # 5 cards per row
+                    col = 0
+                    row += 1
+
+        # Set scroll area widget
+        self.gamesScrollArea.setWidget(self.scrollContent)
+        self.verticalLayout.addWidget(self.gamesScrollArea)
+
         # --- User Preferences Form ---
         self.userPrefsFrame = QFrame(self.contentBox)
         self.userPrefsFrame.setObjectName(u"userPrefsFrame")
@@ -889,20 +967,20 @@ class Ui_MainWindow(object):
         self.userPrefsLayout.addWidget(self.combo_genre, 1, 1)
 
         # Gender
-        self.label_gender = QLabel("Gender:")
-        self.label_gender.setAlignment(Qt.AlignCenter | Qt.AlignVCenter)
-        self.radio_gender_male = QRadioButton("Male")
-        self.radio_gender_female = QRadioButton("Female")
-        self.gender_group = QButtonGroup(self.userPrefsFrame)
-        self.gender_group.addButton(self.radio_gender_male)
-        self.gender_group.addButton(self.radio_gender_female)
-        gender_layout = QHBoxLayout()
-        gender_layout.setSpacing(200)
-        gender_layout.addWidget(self.radio_gender_male)
-        gender_layout.addWidget(self.radio_gender_female)
-        gender_layout.addStretch()  # Push buttons to left of right half
-        self.userPrefsLayout.addWidget(self.label_gender, 2, 0)
-        self.userPrefsLayout.addLayout(gender_layout, 2, 1)
+        # self.label_gender = QLabel("Gender:")
+        # self.label_gender.setAlignment(Qt.AlignCenter | Qt.AlignVCenter)
+        # self.radio_gender_male = QRadioButton("Male")
+        # self.radio_gender_female = QRadioButton("Female")
+        # self.gender_group = QButtonGroup(self.userPrefsFrame)
+        # self.gender_group.addButton(self.radio_gender_male)
+        # self.gender_group.addButton(self.radio_gender_female)
+        # gender_layout = QHBoxLayout()
+        # gender_layout.setSpacing(200)
+        # gender_layout.addWidget(self.radio_gender_male)
+        # gender_layout.addWidget(self.radio_gender_female)
+        # gender_layout.addStretch()  # Push buttons to left of right half
+        # self.userPrefsLayout.addWidget(self.label_gender, 2, 0)
+        # self.userPrefsLayout.addLayout(gender_layout, 2, 1)
 
         # Time willing to spend (Short/Medium/Long - 3 intervals)
         self.label_time = QLabel("Session length:")
@@ -1105,7 +1183,8 @@ class Ui_MainWindow(object):
                 "    background-color: rgb(189, 147, 249);"
                 "}"
             )
-            
+
+        
         self.stackedWidget.addWidget(self.widgets)
         self.new_page = QWidget()
         self.new_page.setObjectName(u"new_page")

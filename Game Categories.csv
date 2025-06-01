@@ -5,7 +5,7 @@ call of duty,shooter,1,1,1,adult,1,1,1,realistic,medium,pricey,1,intermediate,me
 stardew valley,adventure,1,0,1,child,1,1,0,retro,medium,cheap,1,beginner,medium
 dark souls,rpg,1,1,0,teen,1,0,1,realistic,high,cheap,0,expert,long
 animal crossing ,adventure,0,1,0,child,1,0,0,stylized,low,pricey,1,beginner,short
-fifa 2024,sports,1,1,0,child,1,1,0,realistic,low,pricey,1,intermediate,short
+FC 24,sports,1,1,0,child,1,1,0,realistic,low,pricey,1,intermediate,short
 cyberpunk 2077,rpg,1,1,0,adult,1,0,1,realistic,high,pricey,0,intermediate,long
 among us,puzzle,1,0,1,child,0,1,0,stylized,low,cheap,1,beginner,short
 fornite,shooter,1,1,1,teen,1,1,1,stylized,low,free,1,intermediate,medium
@@ -14,3 +14,31 @@ super mario bros,platformer,0,1,0,child,1,0,0,retro,low,cheap,0,intermediate,med
 resident evil 4,horror,1,1,0,adult,1,0,1,realistic,high,cheap,0,intermediate,long
 portal 2,puzzle,1,0,0,teen,1,1,0,stylized,medium,cheap,0,intermediate,medium
 celeste,platformer,1,1,0,teen,1,0,0,retro,medium,cheap,0,expert,medium
+Terraria,"platformer, adventure",1,1,1,"child, teen, adult",1,1,0,retro,low,cheap,0,"beginner, intermediate, expert","short, medium, long"
+Half-Life 2,"shooter, adventure",1,1,1,"teen, adult",1,0,1,realistic,high,cheap,0,"beginner, intermediate",medium
+ARK: Survival Evolved,adventure,1,1,1,"teen, adult",1,1,1,realistic,medium,pricey,0,"intermediate, expert","medium, long"
+Marvel Rivals,shooter,1,1,0,"teen, adult",0,1,0,stylized,low,free,1,"intermediate, expert","short, medium"
+Spelunky,"platformer, adventure",1,1,0,teen,1,0,0,retro,low,cheap,0,"intermediate, expert",short
+Tetris,puzzle,1,1,1,child,1,0,0,retro,low,free,0,beginner,short
+League of Legends,rpg,1,0,0,teen,0,1,0,stylized,low,free,1,expert,long
+Journey,adventure,1,1,0,adult,1,1,0,stylized,high,cheap,0,beginner,short
+Hades,rpg,1,0,0,adult,1,0,1,stylized,medium,cheap,0,expert,medium
+Rocket League,sports,1,1,0,teen,0,1,0,stylized,low,free,1,intermediate,medium
+Dead by Daylight,horror,1,1,0,adult,0,1,1,realistic,low,pricey,1,expert,medium
+Firewatch,adventure,1,1,0,adult,1,0,0,realistic,high,cheap,0,beginner,short
+Hollow Knight,platformer,1,1,1,teen,1,0,1,stylized,high,cheap,0,expert,medium
+Clash of Clans,strategy,0,0,1,child,0,1,0,stylized,low,free,1,beginner,short
+God of War,"rpg, adventure",1,1,0,"teen, adult",1,0,1,realistic,high,pricey,0,"expert, intermediate","medium, long"
+It Takes Two,platformer,1,1,0,adult,0,1,0,stylized,high,pricey,1,intermediate,medium
+Valorant,shooter,1,0,0,teen,0,1,1,stylized,low,free,1,intermediate,medium
+Slay the Spire,"puzzle, adventure",1,0,0,adult,1,0,0,stylized,medium,cheap,0,expert,short
+Roblox,platformer,1,1,0,child,0,1,0,stylized,low,free,1,beginner,short
+Baldur's Gate 3,rpg,1,1,0,adult,1,1,1,realistic,high,pricey,1,expert,long
+Little Nightmares,horror,1,1,0,teen,1,0,1,stylized,high,cheap,0,intermediate,short
+The Legend of Zelda,"adventure, platformer",1,1,0,teen,1,0,0,stylized,high,pricey,0,intermediate,long
+Red Dead Redemption ,"rpg, adventure",1,1,0,adult,1,0,1,realistic,high,cheap,0,intermediate,long
+Red Dead Redemption 2,"rpg, adventure",1,1,0,adult,1,1,1,realistic,high,pricey,0,intermediate,long
+Elden Ring ,"rpg, adventuel",1,1,0,teen,1,1,1,realistic,high,cheap,0,intermediate,long
+Elden Ring Nightreign,"rpg, adventuel",1,1,0,teen,0,1,1,realistic,medium,cheap,1,intermediate,long
+Outlast ,horror,1,1,0,adult,1,0,1,realistic,medium,cheap,0,intermediate,medium
+Outlast 2,horror,1,1,0,adult,1,0,1,realistic,medium,cheap,0,intermediate,medium
